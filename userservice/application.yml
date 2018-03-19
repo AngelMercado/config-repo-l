@@ -20,7 +20,7 @@ security:
   basic:
     enabled: false
 server:
-  port: 8082
+  port: 8081
   
 eurkea:
   intance: 
