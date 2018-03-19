@@ -19,15 +19,16 @@ spring:
 security:
   basic:
     enabled: false
-      
 server:
-  port: 8082
-
-eureka:
-  instance: 
+  port: 8081
+  
+eurkea:
+  intance: 
     perferIpAddress: true
-  client: 
+  client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http:localhost:8761/eureka
+      
+       
