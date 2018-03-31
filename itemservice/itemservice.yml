@@ -21,7 +21,7 @@ security:
     enabled: false
       
 server:
-  port: 3020
+  port: 8084
 
 eureka:
   instance: 
