@@ -22,7 +22,7 @@ security:
 server:
   port: 8081
   
-eurkea:
+eureka:
   intance: 
     perferIpAddress: true
   client:
@@ -30,6 +30,10 @@ eurkea:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http:localhost:8761/eureka
- 
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:8901/user
+      
 signing:
   key: 345345fsdgsf5345
