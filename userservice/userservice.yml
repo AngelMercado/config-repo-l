@@ -22,7 +22,7 @@ security:
 server:
   port: 8081
   
-eureka:
+eureeka:
   intance: 
     perferIpAddress: true
   client:
