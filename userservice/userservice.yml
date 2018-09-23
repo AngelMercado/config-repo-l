@@ -30,3 +30,6 @@ eurkea:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http:localhost:8761/eureka
+ 
+signing:
+  key: 345345fsdgsf5345
