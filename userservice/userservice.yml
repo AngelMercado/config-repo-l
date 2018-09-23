@@ -30,15 +30,3 @@ eurkea:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http:localhost:8761/eureka
-#enable protect resources
-#also add @enableresourceserver in the application
-security:
-  oauth2:
-    resource:
-      user-info-uri: http://localhost:8901/user
-      
-signing:
-  key: 345345fsdgsf5345
-     
-      
-       
