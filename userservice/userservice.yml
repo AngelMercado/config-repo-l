@@ -1,39 +1,29 @@
-spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: "true"
-    properties:
-      hibernate:
-        dialect: "org.hibernate.dialect.MySQL5Dialect"
-          
-  database:
-    driverClassName: "com.mysql.jdbc.Driver"
-  datasource:
-    url: "jdbc:mysql://localhost:3306/itemsharingdatabase"
-    username: "amercado"
-    password: "BJzVyeGPHyh3z7CF68jkhe3X+BJzVyeGPHyh3z7CF68jkhe3X#34"
-    testWhileIdle: "true"
-    validation-query: "SELECT 1"
-    
-security:
-  basic:
-    enabled: false
-server:
-  port: 8081
-  
-eureeka:
+--- 
+eureka: 
+  client: 
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl: 
+      defaultZone: "http:localhost:8761/eureka"
   intance: 
     perferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http:localhost:8761/eureka
-security:
-  oauth2:
-    resource:
-      user-info-uri: http://localhost:8901/user
-      
-signing:
+server: 
+  port: 8081
+signing: 
   key: 345345fsdgsf5345
+spring: 
+  database: 
+    driverClassName: com.mysql.jdbc.Driver
+  datasource: 
+    password: "BJzVyeGPHyh3z7CF68jkhe3X+BJzVyeGPHyh3z7CF68jkhe3X#34"
+    testWhileIdle: "true"
+    url: "jdbc:mysql://localhost:3306/itemsharingdatabase"
+    username: amercado
+    validation-query: "SELECT 1"
+  jpa: 
+    hibernate: 
+      ddl-auto: update
+    properties: 
+      hibernate: 
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: "true"
